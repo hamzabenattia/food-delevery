@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Food Deliver</string>
+    <string name="nomInput">Last Name</string>
+    <string name="prenomInput">First Name</string>
+    <string name="passwordInput">Password</string>
+    <string name="SignupButton">Sign up</string>
+    <string name="phoneInput">Phone Number</string>
+    <string name="LoginButton">Login</string>
+    <string name="emailInput">Email</string>
+    <string name="newAcountText">Don\'t have an account ?</string>
+    <string name="forgotPassword">Forgot Password ?</string>
+    <string name="registerText">SIGNUP</string>
+    <string name="forgotPasswordButtonText">Continue</string>
+    <string name="fotgotPasswordText">Enter the email address associated with your account and we\'ill send you a link to reset your password</string>
+    <string name="existUser">Already a User ?</string>
+    <string name="loginLink">LOGIN</string>
+    <string name="FieldRequire">All filed are require</string>
+    <string name="updateAccountButton">Update Information</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

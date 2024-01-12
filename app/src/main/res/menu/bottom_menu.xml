@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeItem"
+        android:enabled="true"
+        android:icon="@drawable/btn_1"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/wichlistItem"
+        android:enabled="true"
+        android:icon="@drawable/btn_3"
+        android:title="Wish List"/>
+
+    <item
+        android:id="@+id/mapItem"
+        android:enabled="true"
+        android:icon="@drawable/btn_4"
+        android:title="Map"/>
+
+    <item
+        android:id="@+id/accountItem"
+        android:enabled="true"
+        android:icon="@drawable/btn_5"
+        android:title="Account"/>
+</menu>
