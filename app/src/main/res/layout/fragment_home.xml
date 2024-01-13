@@ -18,8 +18,10 @@
             android:layout_marginBottom="60dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,8 +127,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/top_pic" />
+                        app:layout_constraintVertical_bias="0.42"
+                        app:srcCompat="@drawable/pizza3" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout"
@@ -189,7 +191,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="0.25"
-                            android:background="@drawable/green_background"
+                            android:background="@color/redbg"
                             android:orientation="vertical">
 
                             <ImageView
@@ -205,7 +207,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
-                                android:text="Camera"
+                                android:text="Pizza"
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 tools:ignore="DuplicateIds" />
@@ -216,7 +218,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="0.25"
-                            android:background="@drawable/green_background"
+                            android:background="@color/redbg"
                             android:orientation="vertical">
 
                             <ImageView
@@ -230,7 +232,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
-                                android:text="Music"
+                                android:text="Burger"
                                 android:textAlignment="center"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -240,7 +242,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="0.25"
-                            android:background="@drawable/green_background"
+                            android:background="@color/redbg"
                             android:orientation="vertical">
 
                             <ImageView
@@ -255,7 +257,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
-                                android:text="Gallery"
+                                android:text="HotDog"
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 tools:ignore="DuplicateIds" />
@@ -266,21 +268,21 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="0.25"
-                            android:background="@drawable/green_background"
+                            android:background="@color/redbg"
                             android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                app:srcCompat="@drawable/cat_3" />
+                                app:srcCompat="@drawable/cat_4" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
-                                android:text="Contacts"
+                                android:text="Drink"
                                 android:textAlignment="center"
                                 android:textSize="12sp"
                                 tools:ignore="DuplicateIds" />
@@ -289,6 +291,11 @@
 
 
                 </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/banner"/>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -302,7 +309,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="LastNews"
+                        android:text="Top Food"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -321,8 +328,54 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/view"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="#D9D9D9" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Top Piza"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="See all"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#1b8129"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+
+
             </LinearLayout>
+
+
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

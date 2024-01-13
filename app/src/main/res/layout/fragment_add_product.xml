@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".UploadProductActivity">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Food"
+            android:textSize="25dp"
+
+
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:layout_below="@id/text"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+             />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnChooseImage"
+            android:layout_marginTop="8dp"
+            android:gravity="center|center_horizontal"
+            android:hint="Food Name" />
+
+        <EditText
+            android:id="@+id/editTextProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextProductName"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"
+            android:hint="Food Price"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/editTextProductPrice"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/btnCreateProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Product"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+             />
+
+    </RelativeLayout>
+
+</FrameLayout>

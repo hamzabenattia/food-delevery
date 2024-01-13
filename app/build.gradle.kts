@@ -47,5 +47,8 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("androidx.sqlite:sqlite:2.3.0")
     implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-storage")
+    implementation("com.squareup.picasso:picasso:2.8")
+
 
 }

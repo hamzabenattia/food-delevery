@@ -3,6 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFE1E34</color>
+    <color name="redbg">#FF99A3</color>
+
     <color name="redSurface">#F66B79</color>
 
 

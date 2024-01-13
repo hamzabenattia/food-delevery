@@ -36,8 +36,8 @@ public class HomeScreenActivity extends AppCompatActivity {
                     }
                     if (item.getItemId() == R.id.mapItem)
                     {
+                        replceFragment(new AddProductFragment());
 
-                        return true;
                     }
                     if (item.getItemId() == R.id.wichlistItem)
                     {
@@ -48,41 +48,6 @@ public class HomeScreenActivity extends AppCompatActivity {
             return true;
                 }
                 );
-        /*
-
-        bottomNavigationView.setSelectedItemId(R.id.homeItem);
-        userInfoTV.setText("Hello "+ " "+ currentUser.getDisplayName());
-        nightModeSwitch();
-
-
-
-    }
-
-
-    void initValue() {
-
-        logOutButton = findViewById(R.id.logOutButton);
-        userInfoTV = findViewById(R.id.userInfoTV);
-        nightModeSwitch = findViewById(R.id.swichmod);
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
-    }
-
-
-
-void nightModeSwitch(){
-        nightModeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if (isChecked) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                }
-            }
-        });
-    }
-
-*/
 
 
     }

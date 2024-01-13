@@ -6,10 +6,11 @@
     android:layout_height="wrap_content"
     android:layout_gravity="end"
     android:elevation="3dp"
+
     android:layout_margin="20dp">
 
     <ImageView
-        android:id="@+id/removeFeeder"
+        android:id="@+id/imageView"
         android:layout_width="120dp"
         android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,8 +22,7 @@
         app:srcCompat="@drawable/pizza3" />
 
     <TextView
-
-        android:id="@+id/feederName"
+        android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/background_title_news"
@@ -30,17 +30,18 @@
         android:lines="2"
         android:text="TextView"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/removeFeeder" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
+        android:id="@+id/priceTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="15DT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feederName" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
